@@ -43,7 +43,7 @@ img{
 .card{
   color: #5800FF;
   width: 450px;
-  height: 550px;
+  height: 70%;
   margin: auto;
   border-radius: 1.5rem;
   background-color: #C4D7E0;
@@ -63,7 +63,8 @@ img {
 }
 .data h3{
   padding: 1.5rem 0;
-  font-size: 30px;
+  font-size: 50px;
+  color:lightseagreen
 }
 
 ul{

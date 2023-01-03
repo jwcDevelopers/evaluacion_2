@@ -25,7 +25,9 @@ function success(pos) {
     setFinalTemp((res.data.main.temp - 273.15).toFixed(2))
     setIcon(`http://openweathermap.org/img/w/${res.data.weather?.[0].icon}.png`)
   })
+
 }
+console.log(weather)
 
 function error(err) {
   console.warn(`ERROR(${err.code}): ${err.message}`);
@@ -65,7 +67,8 @@ const actualiceTemp = () => {
               <img src={icon} alt="" />
           </div>
           <div className="data">
-            <h3>Scattered Clounds</h3>
+            {/* <h3>Scattered Clounds</h3> */}
+            <h3 className="city" >{weather.name}</h3>
             <div className="registers">
               <ul>
                 <li>
